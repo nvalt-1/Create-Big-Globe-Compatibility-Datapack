@@ -1,0 +1,31 @@
+{
+	"type": "bigglobe:ore",
+	"config": {
+		"seed": "zinc",
+		"blocks": {
+			"minecraft:stone":             "create:zinc_ore",
+			"minecraft:cobblestone":       "create:zinc_ore",
+			"minecraft:andesite":          "create:zinc_ore",
+			"minecraft:polished_andesite": "create:zinc_ore",
+			"minecraft:diorite":           "create:zinc_ore",
+			"minecraft:polished_diorite":  "create:zinc_ore",
+			"minecraft:granite":           "create:zinc_ore",
+			"minecraft:polished_granite":  "create:zinc_ore",
+			"minecraft:deepslate":         "create:deepslate_zinc_ore"
+		},
+		"chance": {
+			"template": "bigglobe:ores/exponential",
+			"inputs": {
+				"delay": "512.0L",
+				"peak":  "0.75L",
+				"limit": "0.25L"
+			}
+		},
+		"radius": {
+			"type": "average",
+			"min": 2.5,
+			"max": 8.0,
+			"average": 3.5
+		}
+	}
+}
